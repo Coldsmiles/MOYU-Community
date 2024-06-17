@@ -1,0 +1,27 @@
+name: "问题反馈"
+description: "在游玩服务器过程中遇到的问题"
+labels: [问题,新反馈]
+body:
+  - type: checkboxes
+    id: "yml-1"
+    attributes:
+      label: "检查项"
+      description: "请逐个检查下列项目，并勾选确认。"
+      options:
+        - label: "我已在 [Issues 页面](https://github.com/coldsmilec/MOYU-Community/issues?q=is%3Aissue+)和[服务器游玩指南](https://www.mcstarsky.cn/docs/MCStarSky)中搜索，确认了这一问题未被提交过。"
+          required: true
+  - type: textarea
+    id: "yml-2"
+    attributes:
+      label: 描述
+      description: "详细描述具体问题。"
+    validations:
+      required: true
+  - type: textarea
+    id: "yml-3"
+    attributes:
+      label: 上传附件(非必要)
+      description: "上传问题截图或其他附件"
+      placeholder: "先点击这个文本框，然后再将文件直接拖拽到文本框中以上传。"
+    validations:
+      required: false
